@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dutra Agência de Viagens</title>
+    <style>
+      :root {
+        --color-primary: #fff;
+        --color-secondary: #333;
+        --color-terciary: #000;
+        --color-accent: #015fa8;
+        --gap: 30px;
+        --f-size-85: 0.85rem;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+        width: 100dvw;
+        gap: 0;
+        background-image: url('./images/jcob-nasyr-67sVPjK6Q7I-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      a,
+      a:visited {
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+      small {
+        font-size: var(--f-size-85);
+      }
+      .maiuscula {
+        text-transform: uppercase;
+      }
+      .info {
+        max-width: 50%;
+        color: white;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 30px;
+        gap: 10px;
+        border-radius: 25px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        z-index: 1;
+        max-width: 600px;
+      }
+      .logo {
+        width: 150px;
+        height: 150px;
+        box-sizing: border-box;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+        z-index: 2;
+        border-radius: 50%;
+      }
+      .img-logo {
+        width: 100%;
+        height: 100%;
+        clip-path: circle(75px);
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      .contact-info {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+      }
+
+      .contact-info a {
+        color: var(--color-secondary);
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 10px;
+      }
+
+      .contact-info ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .contact-info ul li {
+        padding: 20px;
+        background: var(--color-accent);
+        color: white;
+        border-radius: 15rem;
+      }
+
+      @media (max-width: 490px) {
+        .container {
+          padding: 15px;
+          max-width: 80%;
+        }
+        .logo {
+          width: 100px;
+          height: 100px;
+        }
+        .img-logo {
+          clip-path: circle(50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          class="img-logo"
+          src="./images/logo.jpg"
+          alt="Dutra Agência de Viagens"
+        />
+      </div>
+      <div class="contact-info">
+        <ul>
+          <a href="https://wa.me/551156666465" target="_blank"
+            ><li>11 5666-6465</li></a
+          >
+          <a href="https://www.instagram.com/dutra.agencia/" target="_blank"
+            ><li>Siga-nos no Instagram!</li></a
+          >
+          <a href="https://g.co/kgs/uvqDfPv" target="_blank"
+            ><li>Av. Senador Teotonio Vilela, 1460, São Paulo</li></a
+          >
+          <a href="mailto:dutraagenciaviagens@gmail.com" target="_blank"
+            ><li>dutraagenciaviagens@gmail.com</li></a
+          >
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
