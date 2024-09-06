@@ -43,7 +43,23 @@
         font-size: var(--f-size-85);
       }
       .title {
-        color: var(--color-accent2);
+        color: var(--color-primary);
+        text-shadow: 0 0 25px rgb(255, 255, 255);
+        background: var(--color-accent2);
+        padding: 12px 20px;
+        border-radius: 25px;
+        font-weight: 400;
+        position: relative;
+      }
+      .title::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+        background: var(--color-accent2);
       }
       .maiuscula {
         text-transform: uppercase;
